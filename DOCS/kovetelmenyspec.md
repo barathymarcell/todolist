@@ -68,3 +68,8 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Keresés és szűrés: A felhasználó szűrési és keresési lehetőséget alkalmazhat a feladat listán, például kulcsszavak alapján.
 - Prioritás beállítása: A felhasználó beállíthat prioritást a feladatokhoz.
 
+## Színvakbarát Felület
+
+- Az alkalmazás felületén megfelelő színeket kell alkalmazni, hogy színvak felhasználók számára is könnyen kezelhető legyen.
+- A különböző funkciók és elemek megkülönböztetése ne csak a színekre épüljön, hanem egyéb vizuális jelzésekre is.
+- Az alkalmazás kialakításakor kerülni kell, hogy a fonstos információk kizárólag színkódokkal legyenek ábrázolva.
