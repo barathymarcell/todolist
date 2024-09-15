@@ -38,3 +38,12 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Az alkalmazásnak intuitív és felhasználóbarát platformmal kell rendelkeznie.
 - Az alkalmazásnak gyorsan illetve stabilan kell működnie.
 - Az alkalmazásnak biztonságosnak kell lennie, valamint a felhasználói adatokat bizalmasan kell kezelnie.
+
+## Adaptáló Felület
+
+- Az alkalmazásnak, a különböző eszközökön (például telefonok, táblagépek) is könnyen használhassák, reszponzív dizájnt kell alkalmazni.
+
+## Tesztelés
+
+- Az alkalmazást funkcionalitás és biztonság szempontjából alaposan le kell tesztelni.
+- A tesztelés során számos különböző felhasználói esetet kell szimulálni, mint például hibás adatok megadása, vagy hálózati hiba.
