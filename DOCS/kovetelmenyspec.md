@@ -1,4 +1,4 @@
-/# ToDo Webalkalmazás Követelményspecifikáció
+# ToDo Webalkalmazás Követelményspecifikáció
 
 ## Áttekintés
 
