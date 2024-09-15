@@ -57,3 +57,14 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Már a listában létező elem ismételt hozzáadása esetén egy hibaüzenet ugrik fel, amely a felhasználó tájékoztatja a felhasználót az elem létezéséről.
 - Üres elem hozzáadása esetén szinten hibaüzenetnek kell felugrania.
 
+## Felhasználói Funkciók
+
+- Feladatok hozzáadása: A felhasználó új feladatokat adhat a listához. Minden feladatnak rendelkeznie kell egy címmel és egy leírással.
+- Feladatok szerkesztése: A felhasználó módosíthatja egy már meglévő feladatot.
+- Feladatok törlése: A felhasználó törölheti a már létrehozott, de nem szükséges feladatokat.
+- Feladatok megjelenítése: A felhasználó láthatja az általa létrehozott feladatokat a listában.
+- Feladatok státuszának változása: A felhasználó megjelölhet a létrehozott feladatot "elvégzett"-nek vagy "nem elvégzett"-nek.
+- Feladatok rendezése: A felhasználó különböző szempontok szerint rendezheti a már korábban létrehozott feladatokat.
+- Keresés és szűrés: A felhasználó szűrési és keresési lehetőséget alkalmazhat a feladat listán, például kulcsszavak alapján.
+- Prioritás beállítása: A felhasználó beállíthat prioritást a feladatokhoz.
+
