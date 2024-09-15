@@ -77,3 +77,7 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 ## Cél
 
 Cégünk célja egy egyszerú, letisztult és hatékony ToDo alkalmazás fejlesztése, amely megkönnyíti a felhasználók számára feladataik egyszerű tervezését, rendezését és nyomon követését. Az alkalmazás lehetőséget biztosít majd teendők létrehozására, szerkesztésére, törlésére, valamint a feladatok státuszának követésére.
+
+## Megjegyzések
+
+Ez a követelményspecifikáció átfogó képet ad az alkalmazás funkcionalitásáról és működéséről. A tervezési és fejlesztési folyamat során részletes tervezési dokumentáció és tesztelési terv is készül majd, amelyek pontosan meghatározzák a részletes követelményeket és funkciókat. A fejlesztés során figyelmet kell fordítani a felhasználói élményre és a megbízható működésre.
