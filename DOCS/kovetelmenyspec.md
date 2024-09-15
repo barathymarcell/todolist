@@ -73,3 +73,7 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Az alkalmazás felületén megfelelő színeket kell alkalmazni, hogy színvak felhasználók számára is könnyen kezelhető legyen.
 - A különböző funkciók és elemek megkülönböztetése ne csak a színekre épüljön, hanem egyéb vizuális jelzésekre is.
 - Az alkalmazás kialakításakor kerülni kell, hogy a fonstos információk kizárólag színkódokkal legyenek ábrázolva.
+
+## Cél
+
+Cégünk célja egy egyszerú, letisztult és hatékony ToDo alkalmazás fejlesztése, amely megkönnyíti a felhasználók számára feladataik egyszerű tervezését, rendezését és nyomon követését. Az alkalmazás lehetőséget biztosít majd teendők létrehozására, szerkesztésére, törlésére, valamint a feladatok státuszának követésére.
