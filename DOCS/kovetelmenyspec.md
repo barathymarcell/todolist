@@ -30,3 +30,11 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - A tevékenységek a háttérrendszerben tárolódnak, és az alkalmazás betölti őket a kezdőképernyőn.
 
 ### Üres Lista
+
+- Abban az esetben, ha az alkalmazásban egyetlen tevékenység sem szerepel megjelenik a "Nincs ToDo" felirat a háttérben.
+
+## Nem Funkcionális Követelmények
+
+- Az alkalmazásnak intuitív és felhasználóbarát platformmal kell rendelkeznie.
+- Az alkalmazásnak gyorsan illetve stabilan kell működnie.
+- Az alkalmazásnak biztonságosnak kell lennie, valamint a felhasználói adatokat bizalmasan kell kezelnie.
