@@ -47,3 +47,13 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 
 - Az alkalmazást funkcionalitás és biztonság szempontjából alaposan le kell tesztelni.
 - A tesztelés során számos különböző felhasználói esetet kell szimulálni, mint például hibás adatok megadása, vagy hálózati hiba.
+
+## Dokumentáció
+
+- Rendelkeznie kell az alkalmazásnak dokumentációval mint a felhasználók illetve fejlesztők számára, beleértve az API-dokumentációt valamint alkalmazás használatának lépéseit is.
+
+## Kivételkezelések
+
+- Már a listában létező elem ismételt hozzáadása esetén egy hibaüzenet ugrik fel, amely a felhasználó tájékoztatja a felhasználót az elem létezéséről.
+- Üres elem hozzáadása esetén szinten hibaüzenetnek kell felugrania.
+
