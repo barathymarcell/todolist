@@ -29,3 +29,42 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Az alkalmazás egy JSON backendet használ a tevékenységek tárolására és kezelésére.
 - A tevékenységek a háttérrendszerben tárolódnak, és az alkalmazás betölti őket a kezdőképernyőn.
 
+### Üres Lista
+
+- Abban az esetben, ha az alkalmazásban egyetlen tevékenység sem szerepel megjelenik a "Nincs ToDo" felirat a háttérben.
+
+## Nem Funkcionális Követelmények
+
+- Az alkalmazásnak intuitív és felhasználóbarát platformmal kell rendelkeznie.
+- Az alkalmazásnak gyorsan illetve stabilan kell működnie.
+- Az alkalmazásnak biztonságosnak kell lennie, valamint a felhasználói adatokat bizalmasan kell kezelnie.
+
+## Adaptáló Felület
+
+- Az alkalmazásnak, a különböző eszközökön (például telefonok, táblagépek) is könnyen használhassák, reszponzív dizájnt kell alkalmazni.
+
+## Tesztelés
+
+- Az alkalmazást funkcionalitás és biztonság szempontjából alaposan le kell tesztelni.
+- A tesztelés során számos különböző felhasználói esetet kell szimulálni, mint például hibás adatok megadása, vagy hálózati hiba.
+
+## Dokumentáció
+
+- Rendelkeznie kell az alkalmazásnak dokumentációval mint a felhasználók illetve fejlesztők számára, beleértve az API-dokumentációt valamint alkalmazás használatának lépéseit is.
+
+## Kivételkezelések
+
+- Már a listában létező elem ismételt hozzáadása esetén egy hibaüzenet ugrik fel, amely a felhasználó tájékoztatja a felhasználót az elem létezéséről.
+- Üres elem hozzáadása esetén szinten hibaüzenetnek kell felugrania.
+
+## Felhasználói Funkciók
+
+- Feladatok hozzáadása: A felhasználó új feladatokat adhat a listához. Minden feladatnak rendelkeznie kell egy címmel és egy leírással.
+- Feladatok szerkesztése: A felhasználó módosíthatja egy már meglévő feladatot.
+- Feladatok törlése: A felhasználó törölheti a már létrehozott, de nem szükséges feladatokat.
+- Feladatok megjelenítése: A felhasználó láthatja az általa létrehozott feladatokat a listában.
+- Feladatok státuszának változása: A felhasználó megjelölhet a létrehozott feladatot "elvégzett"-nek vagy "nem elvégzett"-nek.
+- Feladatok rendezése: A felhasználó különböző szempontok szerint rendezheti a már korábban létrehozott feladatokat.
+- Keresés és szűrés: A felhasználó szűrési és keresési lehetőséget alkalmazhat a feladat listán, például kulcsszavak alapján.
+- Prioritás beállítása: A felhasználó beállíthat prioritást a feladatokhoz.
+
