@@ -29,3 +29,4 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Az alkalmazás egy JSON backendet használ a tevékenységek tárolására és kezelésére.
 - A tevékenységek a háttérrendszerben tárolódnak, és az alkalmazás betölti őket a kezdőképernyőn.
 
+### Üres Lista
