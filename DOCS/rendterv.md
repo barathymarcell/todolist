@@ -161,3 +161,7 @@ Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  h
 Valós idejű frissítések és szinkronizálás az eszközök és platformok között.
 Támogatja az offline hozzáférést és a konfliktusfeloldást.
 
+- 3.6. Skálázhatóság és teljesítmény:
+
+A növekvő felhasználói bázis befogadására tervezett skálázhatóság.
+Terheléselosztás, gyorsítótár és adatbázis-optimalizálás a teljesítmény érdekében.
