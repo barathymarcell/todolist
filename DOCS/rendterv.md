@@ -197,3 +197,39 @@ Hibakövetés és -kezelés: A tesztelés során azonosított hibákat és probl
 Tesztkörnyezetek konfigurálása: A tesztelési környezetek szorosan utánozzák a gyártási környezet konfigurációit, biztosítva, hogy a tesztek pontosan tükrözzék a valós körülményeket.
 
 Megfelelés és tanúsítás: Azokban az esetekben, amikor az alkalmazásnak meg kell felelnie a szabályozási vagy iparág-specifikus szabványoknak (pl. HIPAA, GDPR), a megfelelőségi tesztelési és tanúsítási folyamatok a minőségbiztosítási stratégia részét képezik.
+
+- 3.8. Biztonsági mentés és helyreállítás:
+
+Rendszeres automatizált biztonsági mentések: Az architektúra olyan automatizált biztonsági mentési folyamatokat tartalmaz, amelyek rendszeresen és következetesen biztonsági másolatot készítenek minden lényeges adatról, beleértve a felhasználói fiókokat, feladatlistákat, feladatokat és rendszerkonfigurációkat. Ezeket a biztonsági mentéseket jellemzően alacsony felhasználói aktivitású időszakokra ütemezik, hogy a lehető legkisebb legyen a megszakítás.
+
+Inkrementális és teljes biztonsági mentések: Mind inkrementális, mind teljes biztonsági mentéseket alkalmaznak. Az inkrementális biztonsági mentések az utolsó biztonsági mentés óta bekövetkezett változásokat rögzítik, csökkentve ezzel a tárolási igényeket és a biztonsági mentés idejét. Az időszakos teljes biztonsági mentések a teljes adatállományt rögzítik az átfogó helyreállítás érdekében.
+
+Helyen kívüli és redundáns biztonsági mentések: A biztonsági másolatokat földrajzilag különálló helyeken tárolják, hogy védelmet nyújtsanak az elsődleges adatközpontot érintő fizikai katasztrófák, például tűz vagy árvíz ellen. A redundáns biztonsági másolatok fenntartása biztosítja az adatok rendelkezésre állását még akkor is, ha az egyik biztonsági másolat tárolóhely meghibásodik.
+
+Biztonsági mentések tárolása: Az architektúra dedikált tárolási infrastruktúrát tartalmaz a biztonsági mentési adatok számára. Ez a tároló a növekvő adatmennyiségek befogadására skálázható, és nagy tartósságra és rendelkezésre állásra van tervezve.
+
+Adattitkosítás: Az adatbiztonság érdekében a biztonsági mentési adatok titkosítva vannak mind a szállítás során, mind a nyugalmi állapotban. A titkosítási kulcsokat biztonságosan kezelik és rendszeresen cserélik, hogy megakadályozzák a jogosulatlan hozzáférést.
+
+Biztonsági mentés ellenőrzése: Rendszeres biztonsági másolat-ellenőrzési folyamatokat hajtanak végre a biztonsági másolat adatainak integritásának biztosítása érdekében. Ezek a folyamatok automatizált ellenőrzéseket és kézi ellenőrzéseket foglalnak magukban annak megerősítésére, hogy a biztonsági mentések teljesek és helyreállíthatóak.
+
+Katasztrófa utáni helyreállítási terv (DRP):
+
+Katasztrófa-forgatókönyvek: A DRP meghatározza a lehetséges katasztrófa-forgatókönyveket, például hardverhibák, adatvesztés, természeti katasztrófák vagy kibertámadások eseteit, és az egyes forgatókönyvekre vonatkozó konkrét reagálási terveket vázol fel.
+
+Szerepek és felelősségi körök: A DRP meghatározza a katasztrófa utáni helyreállítási csoport szerepét és feladatait, beleértve a rendszergazdákat, az informatikai személyzetet és a kommunikációs koordinátorokat.
+
+Kommunikációs protokollok: A terv kommunikációs protokollokat tartalmaz az érintett érdekelt felek, köztük a felhasználók értesítésére a katasztrófaeseményről és annak a szolgáltatás rendelkezésre állására gyakorolt hatásáról.
+
+Tesztelés és gyakorlatok: Rendszeres katasztrófa utáni helyreállítási teszteléseket és gyakorlatokat végeznek annak biztosítása érdekében, hogy a DRP hatékony legyen, és hogy a személyzet felkészült legyen annak végrehajtására egy valós katasztrófa esetén.
+
+Nagyfokú rendelkezésre állás (HA):
+
+Terheléskiegyenlítés: A terheléselosztási mechanizmusok a bejövő forgalmat több szerver vagy adatközpont között osztják szét a szolgáltatás folyamatos rendelkezésre állásának biztosítása és a túlterhelés megelőzése érdekében.
+
+Felügyelet és riasztás: A biztonsági mentési folyamatok és a rendszer állapotának folyamatos felügyelete. Minden rendellenességet vagy problémát azonnal észlel, és riasztásokat indít, hogy értesítse a rendszergazdákat az azonnali megoldás érdekében.
+
+Verzióvezérlés a konfigurációhoz: Az alkalmazás és összetevőinek konfigurációs beállításai verzióvezéreltek, hogy a környezet pontosan rekonstruálható legyen a helyreállítás során.
+
+Felhasználói adatokhoz való hozzáférés a helyreállítás során: Katasztrófa esetén a felhasználóknak a helyreállítási folyamat során szükségük lehet a feladatlistáikhoz és adataikhoz való hozzáférésre. Az architektúra tartalmaz olyan mechanizmusokat, amelyek a helyreállítás során korlátozott vagy csak olvasási hozzáférést biztosítanak a felhasználói adatokhoz.
+
+Dokumentáció és képzés: A biztonsági mentési és helyreállítási eljárásokról átfogó dokumentációt vezetnek, és az érintett személyzetet kiképzik ezen eljárások hatékony végrehajtására.
