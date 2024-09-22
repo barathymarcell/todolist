@@ -156,3 +156,8 @@ Feladattal kapcsolatos értesítések: A feladattal kapcsolatos értesítéseket
 
 Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  hibakezelési és újrakezelési mechanizmusokat az értesítések kézbesítési hibáinak kezelésére. Ha egy értesítést nem lehet azonnal kézbesíteni (pl.: hálózati problémák miatt), a rendszer újra megkíséreli a kézbesítést, hogy a felhasználók megkapják az információt.
 
+- 3.5. Szinkronizálás:
+
+Valós idejű frissítések és szinkronizálás az eszközök és platformok között.
+Támogatja az offline hozzáférést és a konfliktusfeloldást.
+
