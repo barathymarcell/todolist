@@ -156,3 +156,44 @@ Feladattal kapcsolatos értesítések: A feladattal kapcsolatos értesítéseket
 
 Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  hibakezelési és újrakezelési mechanizmusokat az értesítések kézbesítési hibáinak kezelésére. Ha egy értesítést nem lehet azonnal kézbesíteni (pl.: hálózati problémák miatt), a rendszer újra megkíséreli a kézbesítést, hogy a felhasználók megkapják az információt.
 
+- 3.5. Szinkronizálás:
+
+Valós idejű frissítések és szinkronizálás az eszközök és platformok között.
+Támogatja az offline hozzáférést és a konfliktusfeloldást.
+
+- 3.6. Skálázhatóság és teljesítmény:
+
+A növekvő felhasználói bázis befogadására tervezett skálázhatóság.
+Terheléselosztás, gyorsítótár és adatbázis-optimalizálás a teljesítmény érdekében.
+
+- 3.7. Tesztelés és minőségbiztosítás:
+
+Tesztelési típusok: A minőségbiztosítási folyamat a tesztelés különböző típusait foglalja magában:
+- Unit tesztelés: A fejlesztők egységteszteket írnak az egyes kódkomponensek (pl. függvények vagy módszerek) működésének ellenőrzésére. Ezek a tesztek biztosítják, hogy a kód kis egységei az elvárásoknak megfelelően működjenek.
+- Integrációs tesztelés: Az integrációs tesztek azt ellenőrzik, hogy az alkalmazás különböző összetevői zökkenőmentesen működnek-e együtt. Ellenőrzi azokat a problémákat, amelyek a különböző modulok kölcsönhatása során felmerülhetnek.
+- Funkcionális tesztelés: A funkcionális tesztek az alkalmazás funkcionalitását értékelik a meghatározott követelmények alapján. A teszteseteket úgy tervezik, hogy ellenőrizzék, hogy az egyes funkciók helyesen viselkednek-e.
+- Regressziós tesztelés: A kód módosításakor regressziós teszteket hajtanak végre annak biztosítására, hogy az új frissítések ne vezessenek be új problémákat, illetve ne törjék meg a meglévő funkciókat.
+- Felhasználói felület (UI) tesztelése: A felhasználói felület tesztjei az alkalmazás felhasználói felületének használhatóságát, érzékenységét és vizuális konzisztenciáját vizsgálják a különböző eszközökön és böngészőkben.
+- Teljesítménytesztelés: A teljesítménytesztek az alkalmazás sebességét, skálázhatóságát és erőforrás-kihasználtságát értékelik különböző terhelési körülmények között. Ez biztosítja, hogy az alkalmazás képes legyen kezelni a várható felhasználói terhelést.
+- Biztonsági tesztelés: A biztonsági tesztek, beleértve a behatolásvizsgálatot és a sebezhetőségi vizsgálatot, azonosítják az alkalmazás kódjának és konfigurációjának potenciális biztonsági sebezhetőségeit és gyenge pontjait.
+- Felhasználói átvételi tesztelés (User Acceptance Testing): Az UAT során valódi felhasználók vagy érdekelt felek tesztelik az alkalmazást annak ellenőrzése érdekében, hogy az megfelel-e az igényeiknek és elvárásaiknak.
+- Tesztkörnyezetek: Az architektúra több tesztkörnyezetet tartalmaz a fejlesztési, a staging és a termelési környezetek elkülönítésére. A tesztelés jellemzően elszigetelt környezetekben történik, hogy a problémák ne befolyásolhassák az éles rendszert.
+
+Tesztadatok kezelése: Az architektúra tartalmazza a tesztadatok kezelésére szolgáló mechanizmusokat. A tesztadatok generálhatók, anonimizálhatók vagy importálhatók, hogy a tesztelés során valós forgatókönyveket és szélsőséges eseteket szimuláljanak.
+
+Tesztjelentés és naplózás: Átfogó tesztjelentési és naplózási mechanizmusok állnak rendelkezésre a teszteredmények, problémák és hibák dokumentálására. Ezek az információk felbecsülhetetlen értékűek a fejlesztők és a QA csapatok számára az előrehaladás nyomon követéséhez és a figyelmet igénylő területek azonosításához.
+
+Terhelésvizsgálat és skálázhatósági értékelés: Terhelésvizsgálati eszközöket (pl. Apache JMeter) használnak a nagy felhasználói terhelések szimulálására az alkalmazás teljesítményének és skálázhatóságának értékelése érdekében. Ez segít a szűk keresztmetszetek azonosításában és az erőforrások elosztásának optimalizálásában.
+
+
+Biztonsági vizsgálat: A CI/CD csővezetékbe automatizált biztonsági ellenőrző eszközöket integrálnak a kódbázisban lévő biztonsági sebezhetőségek azonosítása és mérséklése érdekében. Az adatvédelem és a biztonsági szabványoknak való megfelelés biztosítása érdekében rendszeres biztonsági auditokat végeznek.
+
+Használhatósági tesztelés: A használhatósági tesztek során valódi felhasználók lépnek kapcsolatba az alkalmazással, hogy értékeljék annak könnyű használhatóságát, hozzáférhetőségét és a felhasználói elégedettséget. A használhatósági tesztelésből származó visszajelzések a tervezés és a felhasználói élmény javítását szolgálják.
+
+Teszteset-kezelés: A tesztesetek dokumentálása, kezelése és nyomon követése teszteset-kezelő eszközökkel történik. Ezek az eszközök segítenek a QA csapatoknak a tesztcsomagok hatékony megszervezésében és végrehajtásában.
+
+Hibakövetés és -kezelés: A tesztelés során azonosított hibákat és problémákat hibakezelő eszközökkel (pl. Jira, Bugzilla) követik nyomon. A fejlesztők kategorizálják, rangsorolják és megoldásra kijelölik őket.
+
+Tesztkörnyezetek konfigurálása: A tesztelési környezetek szorosan utánozzák a gyártási környezet konfigurációit, biztosítva, hogy a tesztek pontosan tükrözzék a valós körülményeket.
+
+Megfelelés és tanúsítás: Azokban az esetekben, amikor az alkalmazásnak meg kell felelnie a szabályozási vagy iparág-specifikus szabványoknak (pl. HIPAA, GDPR), a megfelelőségi tesztelési és tanúsítási folyamatok a minőségbiztosítási stratégia részét képezik.
