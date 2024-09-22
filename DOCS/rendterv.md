@@ -123,3 +123,21 @@ Feladatteljesítés és előzmények: A felhasználók megjelölhetik a feladato
 
 Adatszinkronizálás: A kollaboratív beállításoknál az adatok szinkronizálása kulcsfontosságú. Az architectúre biztosítja, hogy a feladatok és a frissítések szinkronizálása valós időben vagy közel valós időben történjen a csapattagok közötti konzisztencia fenntartása érdekében.
 
+- 3.3 Szervezeti lista:
+
+Lista adatszerkezet: A listaszervezés egy jól meghatározott adatszerkezettel kezdődik, amely a feladatlistákat reprezentálja. Minda lista jellemzően olyan attribútumokat tartalmaz, mint a név, a leírás, a létrehozás dátuma és a jogosultságok (pl.: privát vagy megosztott).
+
+Lista létrehozása és módosítása: A felhasználó új feladatlistákat hozhatnak létre a frontend felületen keresztül. Amikor egy lista létrejön, az a backend-adatbázisban tárolódik a hozzá tartozó metaadatokkal együtt. A felhasználók a meglévő listákat is módosíthatják, frissítve az olyan attribútomokat, mint a lista neve vagy leírása.
+
+A listák rendezése és szűrése: Az alkalmazás rendezési és szűrési lehetőségeket kínál a listálhoz, hogy a felhasználók könnyebben megtalálják és kezeljék azokat. A felhasználók a listákat név, létrehozás dátuma vagy más egyéni kritériumok alapján rendezhetik. A szűrés lehetővé teszi a felhasználók számára, hogy kategóriák, címkék vagy jogosultságok alapján meghatározott listakészleteket jelenítség meg.
+
+Listák archiválása: Idővel a felhasználók nagyszámú listát halmozhatnak fel. A tiszta és rendezett munkaterület fenntartása érdekében az alkalmazás listák archiválását kínálhatja. A felhasználók archiválhatják azokat a listákat, amelyeket már nem használnak aktívan, így azok kikerülnek a fő nézetből, de referenciaként továbbra is elérhetőek maradnak.
+
+Listaszervezési eszközök: A felhasználók átrendezhetik a listák sorrendjét, csoportosítva azokat preferenciák szerint. A drag-and-drop funkció lehetővé teszi a listák egyszerű átrendezését, így a felhasználók szükség szerint rangsorolhatják és rendezhetik azokat.
+
+Listák együttműködési funkciói: A megosztott listákon együttműködési funkciók állnak rendelkezlsre. A felhasználók a listán belül feladatokat rendezhetnek a csapattagokhoz, megjegyzéseket adhatnak a listaelemekhez, és közösen követhetik nyomon a feladatok előrehaladását. Ezek a funkciók elősegítik a hatékony csapatmunkát és projektmenedzsmentet.
+
+Integráció a feladatkezeléssel: A listaszervezés szorosan integrálódik a  feladatkezeléssel. A felhasználók könnyedén létrehozhatnak feladatokat az egyes listákon belül, és a feladatok a szülőlistákhoz kapcsolódnak. Ez a kapcsolat biztosítja a feladatok megfelelő szervezését és kategorizálását.
+
+Adatok szinkronizálása: Együttműködési környezetben az adatok szinkronizálása létfontosságú annak biztosításához, hogy a listaváltozások valós időben vagy közel valós időben tükröződjenek a csapat minden tagja számára.
+
