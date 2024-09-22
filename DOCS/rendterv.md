@@ -253,3 +253,9 @@ A következő lépésben a webalkalmazásunk betölti a CSS fájlt a megfelelő 
 ### 4.4. CSS szabályok feldolgozása (`parse css`)
 
 Miután a CSS fájl betöltődött, a webalkalmazásunknak meg kell értenie a stílusokat és szabályokat, hogy alkalmazhassa azokat az HTML elemekre. A `parse css` ikon a CSS szabályok feldolgozását szimbolizálja.
+
+### 4.6. Megjelenítés (`display`)
+
+Végül a létrehozott DOM fa alapján a webalkalmazásunk megjeleníti a felhasználói felületet a böngészőben vagy a célplatformon. A nyilak, amelyek a `create DOM tree` ikonról a `display` ikonokra mutatnak, szimbolizálják ezt a folyamatot.
+
+Ez a fejezet részletesen bemutatja a HTML és CSS fájlok betöltését és feldolgozását, valamint hogyan vezet ez a folyamat a felhasználói felület megjelenítéséhez a webalkalmazásunkban.
