@@ -141,3 +141,18 @@ Integráció a feladatkezeléssel: A listaszervezés szorosan integrálódik a  
 
 Adatok szinkronizálása: Együttműködési környezetben az adatok szinkronizálása létfontosságú annak biztosításához, hogy a listaváltozások valós időben vagy közel valós időben tükröződjenek a csapat minden tagja számára.
 
+- 3.4 Értesítések:
+
+Feladattal kapcsolatos értesítések: A feladattal kapcsolatos értesítéseket olyan műveletek váltják ki, mint például a feladat létrehozása, az esedékességi időpontok kijelölése, a feladat befejezése vagy a feladat másoknak történő kijelölése. Amikor egy felhasználó létrehoz vagy módosít egy feladatot, az értesítési rendszer megfelelő értesítéseket küld a kijelöl címzetteknek.
+
+Értesítési sablonok: Az értesítési üzeneteket gyakran sablonok segítségével előre definiálják. Ezek a sablonok lehetővé teszik az üzenetek egységes formázását és tartalmát. A sablonok testre szabhatók, hogy tartalmazzák a feladat részletei, az esedékességi dátumokat és egyéb releváns információkat.
+
+Értesítési előzmények: A felhasználók hozzáférhetnek a kapott értesítések előzményeihez. Ez a funkció nyilvántartást biztosít a korábbi értesítésekről és emlékeztetőkről, ami hasznos lehet a hivatkozás és a nyomon követés szempontjából.
+
+Értesítési beállítások tárolása: A felhasználói értesítési preferenciák biztonságosan tárolódnak a backend adatbázisban. A felhasználók ezeket a beállításokat bármikor frissíthetik az alkalmazás beállításain keresztül.
+
+Értesítési naplók és nyomon követés: Az értesítések állapotának nyomon követésére részletes naplók és felügyeleti eszközök állnak rendelkezésre. Ez segít a rendszergazdáknak azonosítani és kezelni az értesítési rendszerrel kapcsolatos problémákat, biztosítva az értesítések megbízható kézbesítését.
+
+Értesítési kézbesítési jelentések: Kritikus értesítések esetén kézbesítesi jelentések készíthetők. Ezek a jelentések megerősítik, hogy az értesítések sikeresen elküldésre és fogadásran kerültek-e. A kézbesítési jelentések hasznosak lehetnek a fontos frissítések nyomon követéséhez és a felhasználók tájékoztatásának biztosításához.
+
+Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  hibakezelési és újrakezelési mechanizmusokat az értesítések kézbesítési hibáinak kezelésére. Ha egy értesítést nem lehet azonnal kézbesíteni (pl.: hálózati problémák miatt), a rendszer újra megkíséreli a kézbesítést, hogy a felhasználók megkapják az információt.
