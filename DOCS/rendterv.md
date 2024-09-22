@@ -233,3 +233,23 @@ Verzióvezérlés a konfigurációhoz: Az alkalmazás és összetevőinek konfig
 Felhasználói adatokhoz való hozzáférés a helyreállítás során: Katasztrófa esetén a felhasználóknak a helyreállítási folyamat során szükségük lehet a feladatlistáikhoz és adataikhoz való hozzáférésre. Az architektúra tartalmaz olyan mechanizmusokat, amelyek a helyreállítás során korlátozott vagy csak olvasási hozzáférést biztosítanak a felhasználói adatokhoz.
 
 Dokumentáció és képzés: A biztonsági mentési és helyreállítási eljárásokról átfogó dokumentációt vezetnek, és az érintett személyzetet kiképzik ezen eljárások hatékony végrehajtására.
+
+## 4. HTML és CSS fájlok betöltése és feldolgozása
+
+A webalkalmazásunk működésének egyik kulcsfontosságú szakasza a HTML és CSS fájlok feldolgozása a felhasználói felület létrehozásához. Ebben a fejezetben bemutatjuk az ábrán látható folyamatot, amely a következő lépésekből áll:
+
+### 4.1. HTML fájl betöltése (`load html`)
+
+Ez a folyamat az első lépés, amikor a webalkalmazásunk betölti a HTML tartalmat egy külső forrásból vagy a helyi tárolóból. A `load html` ikonból induló nyíl ezt a folyamatot szimbolizálja.
+
+### 4.2. HTML tartalom feldolgozása (`parse html`)
+
+Miután a HTML fájl betöltődött, a webalkalmazásunknak meg kell értenie és feldolgoznia a tartalmát. A `parse html` ikonra mutató nyíl jelzi ezt a lépést, amely során az HTML kód által definiált elemek és struktúrák felismerésre kerülnek.
+
+### 4.3. CSS fájl betöltése (`load css`)
+
+A következő lépésben a webalkalmazásunk betölti a CSS fájlt a megfelelő stílusok és formázások alkalmazásához. A `load css` ikonra mutató nyíl mutatja ezt a folyamatot.
+
+### 4.4. CSS szabályok feldolgozása (`parse css`)
+
+Miután a CSS fájl betöltődött, a webalkalmazásunknak meg kell értenie a stílusokat és szabályokat, hogy alkalmazhassa azokat az HTML elemekre. A `parse css` ikon a CSS szabályok feldolgozását szimbolizálja.
