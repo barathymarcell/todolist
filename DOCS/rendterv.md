@@ -102,7 +102,6 @@ API-réteg: Az API-réteg olyan végpontokat tesz közzé, amelyek lehetővé te
 
 Skálázhatóság és terheléskiegyenlítés: Az architektúrát úgy tervezték, hogy skálázható legyen a megnövekedett felhasználói terhelések kezeléséhez. A terheléselosztók a bejövő forgalmat több szerverpéldány között osztják szét a magas rendelkezésre állás és a kérések egyenletes elosztása érdekében.
 
-
 Biztonsági mentés és katasztrófa-helyreállítás: Az adatbázis és az alkalmazási adatok rendszeres biztonsági mentése elengedhetetlen. A katasztrófa-helyreállítási tervek biztosítják az adatok sértetlenségét és rendelkezésre állását előre nem látható események esetén.
 
 ## 3. Fő jellemzők:
@@ -156,3 +155,4 @@ Feladattal kapcsolatos értesítések: A feladattal kapcsolatos értesítéseket
 Értesítési kézbesítési jelentések: Kritikus értesítések esetén kézbesítesi jelentések készíthetők. Ezek a jelentések megerősítik, hogy az értesítések sikeresen elküldésre és fogadásran kerültek-e. A kézbesítési jelentések hasznosak lehetnek a fontos frissítések nyomon követéséhez és a felhasználók tájékoztatásának biztosításához.
 
 Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  hibakezelési és újrakezelési mechanizmusokat az értesítések kézbesítési hibáinak kezelésére. Ha egy értesítést nem lehet azonnal kézbesíteni (pl.: hálózati problémák miatt), a rendszer újra megkíséreli a kézbesítést, hogy a felhasználók megkapják az információt.
+

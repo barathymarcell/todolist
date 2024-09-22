@@ -68,3 +68,16 @@ Ez a dokumentum azt ismerteti, hogy a webalkalmazásunk milyen követelményeket
 - Keresés és szűrés: A felhasználó szűrési és keresési lehetőséget alkalmazhat a feladat listán, például kulcsszavak alapján.
 - Prioritás beállítása: A felhasználó beállíthat prioritást a feladatokhoz.
 
+## Színvakbarát Felület
+
+- Az alkalmazás felületén megfelelő színeket kell alkalmazni, hogy színvak felhasználók számára is könnyen kezelhető legyen.
+- A különböző funkciók és elemek megkülönböztetése ne csak a színekre épüljön, hanem egyéb vizuális jelzésekre is.
+- Az alkalmazás kialakításakor kerülni kell, hogy a fonstos információk kizárólag színkódokkal legyenek ábrázolva.
+
+## Cél
+
+Cégünk célja egy egyszerú, letisztult és hatékony ToDo alkalmazás fejlesztése, amely megkönnyíti a felhasználók számára feladataik egyszerű tervezését, rendezését és nyomon követését. Az alkalmazás lehetőséget biztosít majd teendők létrehozására, szerkesztésére, törlésére, valamint a feladatok státuszának követésére.
+
+## Megjegyzések
+
+Ez a követelményspecifikáció átfogó képet ad az alkalmazás funkcionalitásáról és működéséről. A tervezési és fejlesztési folyamat során részletes tervezési dokumentáció és tesztelési terv is készül majd, amelyek pontosan meghatározzák a részletes követelményeket és funkciókat. A fejlesztés során figyelmet kell fordítani a felhasználói élményre és a megbízható működésre.
