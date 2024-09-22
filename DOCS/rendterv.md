@@ -102,5 +102,57 @@ API-réteg: Az API-réteg olyan végpontokat tesz közzé, amelyek lehetővé te
 
 Skálázhatóság és terheléskiegyenlítés: Az architektúrát úgy tervezték, hogy skálázható legyen a megnövekedett felhasználói terhelések kezeléséhez. A terheléselosztók a bejövő forgalmat több szerverpéldány között osztják szét a magas rendelkezésre állás és a kérések egyenletes elosztása érdekében.
 
-
 Biztonsági mentés és katasztrófa-helyreállítás: Az adatbázis és az alkalmazási adatok rendszeres biztonsági mentése elengedhetetlen. A katasztrófa-helyreállítási tervek biztosítják az adatok sértetlenségét és rendelkezésre állását előre nem látható események esetén.
+
+## 3. Fő jellemzők:
+
+- 3.2 Feladatkezelés:
+
+A Todo List alkalmauás rendszerarhitektúrájának feladatkezelési része a rendszer funkcionalitásának középpontjában áll. Különböző komponenseket és folyamatokat foglal magába, amelyek lehetővé teszik a felhasználók számára a hatékony létrehozást, rendszerezést, nyomon követést és interaktálást a létrehozott feladatokkal. Az alábbiakban részletesen bemutatjuk az architectúra feladatkezekési aspektusát.
+
+Feladat adatszerkezet: A feladatkezelési rendszer középpontjában egy jól meghatározott adaszerkezet áll, amely a feladatokat reprezentálja. Minden deladat jellemzően olyan attribútomokat tartalmaz, mint a cím, leírás, az esedékesség dátuma, a prioritási szint, a kategória vagy a címkék, illetve a státusz (pl.: befejezett vagy függőben lévő).
+
+Feladat létrehozása és módosítása: A felhasználók új feladatokat hozhatnak létre a frontend felületen keresztül. Amikor egy feladatok létrehoznak, az API-hívásokon keresztül elküldik a backendnek, valamint az adatbázisban tárolják. A felhasználók a meglévő feladatokat is módosíthatják, frissíthetik az olyan attribútumokat, mint az esedékesség, a prioritások vagy a leírások.
+
+Feladatlisták és kategóriák: A feladatlisták vagy kategóriák lehetőséget biztosítanak a felhasználók számára a feladataik rendszerezésére. A felhasználók több listát is létrehozhatnak a személyes és a munkával kapcsolatos feladatok elkülönítésére, ami megfelel az igényeiknek. Ez a funkció javítja a szervezést, és segít a felhasználóknak a feladatok meghatározott csoportjaira öszpontosítani.
+
+Feladatok rendszerezése és szűrése: Annak érdekében, hogy a felhasználók megjegyzéseket és jegyzeteket adhatnak a feladatokhoz, hogy további kontextust vagy részleteket adjanak meg. Ez a funkció segíti a csapatokon belüli kommunikációt, és biztosítja a feladatban érintetteknek, hogy egy oldalon álljanak.
+
+Feladatteljesítés és előzmények: A felhasználók megjelölhetik a feladatokat befejezettként. A befejezett feladatok általában archiválásra kerülnek, vagy egy külön részbe kerülnek, így a felhasználókáttekinthetik a feladattörténetüket, és tisztán tarthatják a feladatlistát.
+
+Adatszinkronizálás: A kollaboratív beállításoknál az adatok szinkronizálása kulcsfontosságú. Az architectúre biztosítja, hogy a feladatok és a frissítések szinkronizálása valós időben vagy közel valós időben történjen a csapattagok közötti konzisztencia fenntartása érdekében.
+
+- 3.3 Szervezeti lista:
+
+Lista adatszerkezet: A listaszervezés egy jól meghatározott adatszerkezettel kezdődik, amely a feladatlistákat reprezentálja. Minda lista jellemzően olyan attribútumokat tartalmaz, mint a név, a leírás, a létrehozás dátuma és a jogosultságok (pl.: privát vagy megosztott).
+
+Lista létrehozása és módosítása: A felhasználó új feladatlistákat hozhatnak létre a frontend felületen keresztül. Amikor egy lista létrejön, az a backend-adatbázisban tárolódik a hozzá tartozó metaadatokkal együtt. A felhasználók a meglévő listákat is módosíthatják, frissítve az olyan attribútomokat, mint a lista neve vagy leírása.
+
+A listák rendezése és szűrése: Az alkalmazás rendezési és szűrési lehetőségeket kínál a listálhoz, hogy a felhasználók könnyebben megtalálják és kezeljék azokat. A felhasználók a listákat név, létrehozás dátuma vagy más egyéni kritériumok alapján rendezhetik. A szűrés lehetővé teszi a felhasználók számára, hogy kategóriák, címkék vagy jogosultságok alapján meghatározott listakészleteket jelenítség meg.
+
+Listák archiválása: Idővel a felhasználók nagyszámú listát halmozhatnak fel. A tiszta és rendezett munkaterület fenntartása érdekében az alkalmazás listák archiválását kínálhatja. A felhasználók archiválhatják azokat a listákat, amelyeket már nem használnak aktívan, így azok kikerülnek a fő nézetből, de referenciaként továbbra is elérhetőek maradnak.
+
+Listaszervezési eszközök: A felhasználók átrendezhetik a listák sorrendjét, csoportosítva azokat preferenciák szerint. A drag-and-drop funkció lehetővé teszi a listák egyszerű átrendezését, így a felhasználók szükség szerint rangsorolhatják és rendezhetik azokat.
+
+Listák együttműködési funkciói: A megosztott listákon együttműködési funkciók állnak rendelkezlsre. A felhasználók a listán belül feladatokat rendezhetnek a csapattagokhoz, megjegyzéseket adhatnak a listaelemekhez, és közösen követhetik nyomon a feladatok előrehaladását. Ezek a funkciók elősegítik a hatékony csapatmunkát és projektmenedzsmentet.
+
+Integráció a feladatkezeléssel: A listaszervezés szorosan integrálódik a  feladatkezeléssel. A felhasználók könnyedén létrehozhatnak feladatokat az egyes listákon belül, és a feladatok a szülőlistákhoz kapcsolódnak. Ez a kapcsolat biztosítja a feladatok megfelelő szervezését és kategorizálását.
+
+Adatok szinkronizálása: Együttműködési környezetben az adatok szinkronizálása létfontosságú annak biztosításához, hogy a listaváltozások valós időben vagy közel valós időben tükröződjenek a csapat minden tagja számára.
+
+- 3.4 Értesítések:
+
+Feladattal kapcsolatos értesítések: A feladattal kapcsolatos értesítéseket olyan műveletek váltják ki, mint például a feladat létrehozása, az esedékességi időpontok kijelölése, a feladat befejezése vagy a feladat másoknak történő kijelölése. Amikor egy felhasználó létrehoz vagy módosít egy feladatot, az értesítési rendszer megfelelő értesítéseket küld a kijelöl címzetteknek.
+
+Értesítési sablonok: Az értesítési üzeneteket gyakran sablonok segítségével előre definiálják. Ezek a sablonok lehetővé teszik az üzenetek egységes formázását és tartalmát. A sablonok testre szabhatók, hogy tartalmazzák a feladat részletei, az esedékességi dátumokat és egyéb releváns információkat.
+
+Értesítési előzmények: A felhasználók hozzáférhetnek a kapott értesítések előzményeihez. Ez a funkció nyilvántartást biztosít a korábbi értesítésekről és emlékeztetőkről, ami hasznos lehet a hivatkozás és a nyomon követés szempontjából.
+
+Értesítési beállítások tárolása: A felhasználói értesítési preferenciák biztonságosan tárolódnak a backend adatbázisban. A felhasználók ezeket a beállításokat bármikor frissíthetik az alkalmazás beállításain keresztül.
+
+Értesítési naplók és nyomon követés: Az értesítések állapotának nyomon követésére részletes naplók és felügyeleti eszközök állnak rendelkezésre. Ez segít a rendszergazdáknak azonosítani és kezelni az értesítési rendszerrel kapcsolatos problémákat, biztosítva az értesítések megbízható kézbesítését.
+
+Értesítési kézbesítési jelentések: Kritikus értesítések esetén kézbesítesi jelentések készíthetők. Ezek a jelentések megerősítik, hogy az értesítések sikeresen elküldésre és fogadásran kerültek-e. A kézbesítési jelentések hasznosak lehetnek a fontos frissítések nyomon követéséhez és a felhasználók tájékoztatásának biztosításához.
+
+Hibakezelési és újraporóbálási mechanizmusok:Az architectúra tartalmaz  hibakezelési és újrakezelési mechanizmusokat az értesítések kézbesítési hibáinak kezelésére. Ha egy értesítést nem lehet azonnal kézbesíteni (pl.: hálózati problémák miatt), a rendszer újra megkíséreli a kézbesítést, hogy a felhasználók megkapják az információt.
+
