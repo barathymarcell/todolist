@@ -74,7 +74,7 @@ Felhasználói felület (UI): A Todo List alkalmazás rendszerarchitektúráját
    - A perzisztens adatok olyan adatok, amelyek hosszú távra tárolódnak, és általában a felhasználó által létrehozott vagy módosított információkat tartalmazzák.
    - Ezek az adatok az alkalmazás szempontjából kulcsfontosságúak, mivel hosszú távra tárolják a felhasználók ToDo elemeket, például egy szerveren vagy a böngészőben tárolt helyi adatbázisban.
 
-![System_Design](https://github.com/barathymarcell/todolist/blob/main/DOCSsystem_design.png)
+![System_Design](https://github.com/barathymarcell/todolist/blob/main/DOCS/system_design.png)
 
 Az ábra ezen komponensei és azok közötti kommunikáció lehetővé teszik a webalkalmazások működését, a felhasználók interakcióit, a dinamikus tartalom kezelését, és az adatok hosszú távú tárolását. A felhasználói műveletek (pl. új ToDo hozzáadása vagy törlése) az UI-n keresztül indulnak, majd a JavaScript Interpreter, Network és UI Backend rétegek közreműködésével érintik a perzisztens adatokat. A Rendering Engine pedig az UI-t frissíti a változások megjelenítéséhez a felhasználónak.
 
