@@ -74,6 +74,7 @@ Felhasználói felület (UI): A Todo List alkalmazás rendszerarchitektúráját
    - A perzisztens adatok olyan adatok, amelyek hosszú távra tárolódnak, és általában a felhasználó által létrehozott vagy módosított információkat tartalmazzák.
    - Ezek az adatok az alkalmazás szempontjából kulcsfontosságúak, mivel hosszú távra tárolják a felhasználók ToDo elemeket, például egy szerveren vagy a böngészőben tárolt helyi adatbázisban.
 
+![System_Design](https://github.com/barathymarcell/todolist/edit/main/DOCS/system_design.png)
 
 Az ábra ezen komponensei és azok közötti kommunikáció lehetővé teszik a webalkalmazások működését, a felhasználók interakcióit, a dinamikus tartalom kezelését, és az adatok hosszú távú tárolását. A felhasználói műveletek (pl. új ToDo hozzáadása vagy törlése) az UI-n keresztül indulnak, majd a JavaScript Interpreter, Network és UI Backend rétegek közreműködésével érintik a perzisztens adatokat. A Rendering Engine pedig az UI-t frissíti a változások megjelenítéséhez a felhasználónak.
 
@@ -259,6 +260,8 @@ Miután a CSS fájl betöltődött, a webalkalmazásunknak meg kell értenie a s
 Végül a létrehozott DOM fa alapján a webalkalmazásunk megjeleníti a felhasználói felületet a böngészőben vagy a célplatformon. A nyilak, amelyek a `create DOM tree` ikonról a `display` ikonokra mutatnak, szimbolizálják ezt a folyamatot.
 
 Ez a fejezet részletesen bemutatja a HTML és CSS fájlok betöltését és feldolgozását, valamint hogyan vezet ez a folyamat a felhasználói felület megjelenítéséhez a webalkalmazásunkban.
+
+![HTML_CSS_connection](https://github.com/barathymarcell/todolist/blob/main/DOCS/html_css.png)
 
 ## 5. Következtetés:
 Összefoglalva, a Todo List alkalmazás egy átfogó és felhasználó-központú feladatkezelő rendszer, amely a szervezettség fontosságáról tanúskodik elfoglalt életünkben. Átgondolt felépítésével, sokoldalú összetevőivel és az egyéni és csoportos igényeket kiszolgáló funkciók sokaságával arra készül, hogy nélkülözhetetlen eszközzé váljon mindenki számára, aki a napi tevékenységei során fokozott termelékenységre és szervezettségre törekszik.
