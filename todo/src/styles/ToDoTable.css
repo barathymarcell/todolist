@@ -14,6 +14,7 @@ body {
   max-height: 600px;
   height: auto;
   padding: 48px 0 0 48px;
+
 }
 
 .task-container {
@@ -63,6 +64,7 @@ body {
   color: #fff;
   background: black;
   text-transform: capitalize;
+  
 }
 
 .single-task {
